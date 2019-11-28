@@ -1,0 +1,78 @@
+{%extends 'base.html'%}
+      {%load static%}
+{%block css%}
+    <link href="{%static 'Css/RegistroAnimalBasico.css'%}" rel="stylesheet" media="all">
+    <link href="{%static 'Css/RegistroAnimalConfirmacion.css'%}" rel="stylesheet" >
+{%endblock%}
+      {%block content%}
+
+
+<!-- CONTENIDO -->
+    <div class="page-wrapper bg-red p-t-180 p-b-100 font-robo">
+        <div class="wrapper wrapper--w960">
+            <div class="card card-2">
+                <div class="card-heading" id="card-heading"></div>
+                <div class="row"><div class="card-body">
+                        <div class="col-sm-12">
+                    <div class="row">
+
+                      </div>
+                      <div class="centrar">
+                      <div class="media" >
+
+                      <div class="media-body centrar">
+                        <h1 id="titulo">¡Registra tu mascota!</h1>
+                      </div>
+                      </div>
+                      <h2 id="h2"> ¡Genial!</h2>
+                      <h3 id="h3"> Confirmenos que todo este en orden</h3>
+                    </div>
+                    <div id="row">
+                    <div class="row" >
+                      <img src="{{object.imagen.url}}" class="rounded-circle" alt="Cinque Terre" id="imgperfil">
+                    </div>
+                    <h2 id="nombre">{{object.nombre}}</h4>
+                    <h3 id="razaEspecie">{{object.raza}}-{{object.especie}}</h4>
+                    <hr>
+                    <h3 id="nombre"> Información Medica:</h3>
+                    <p id="p"> {{object.info_medica}}</p>
+                    <div class="row">
+                      <div class="col-sm-2">
+                        <img src="{% static "/Img/macho.png"%}" alt="" id="imgSexo">
+                        <p id="textoSexo">{{object.sexo}}</p>
+                      </div>
+                      <div class="col-sm-3">
+                        <p id="edadtexto">Fecha de nacimiento:</p>
+                        <h4 id="edad">{{object.fec_nac}}</h4>
+                      </div>
+                      <div class="col-sm-4" id="vet">
+                        <h4>Veterinario:</h4>
+                        <p>{{object.nom_doc}}</p>
+                        <p>{{object.nom_vet}}</p>
+                        <p>{{object.dir_vet}}</p>
+                      </div>
+                      <div class="col-sm-3"id="idtitulo">
+                        <h5 >El numero ID de su mascota es:</h5>
+                        <strong>{{object.pk}}</strong>
+                      </div>
+
+                    </div>
+                    </div>
+
+                    </div>
+
+                      </div>
+                      <div class="row col align-items-end botonera">
+                          <div><form method="POST">{%csrf_token%}
+                            <button type="submit" class="btn botones col  waves-effect waves-light" id="btnsalir">Salir</button></form>
+                          </div>
+                          <div><form method="GET" action="{% url 'mascotas:mismascotas'%}">
+                            <button type="submit" class="btn botones col "id="btnsig">Confirmar</button></form>
+                          </div>
+
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                    </div>
+{%endblock%}

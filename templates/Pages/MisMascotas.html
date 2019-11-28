@@ -1,0 +1,35 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block css%}
+
+    <link href="{%static '/Css/MisMascotas.css'%}" rel="stylesheet" media="all">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- FUENTES -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Muli|Noto+Sans|Open+Sans|Ruda&display=swap" rel="stylesheet">
+{%endblock%}
+{%block content%}
+  <div class="col-12">
+    <div class="row">
+      <div class="container" id="contenedor">
+{% for p in object_list %}
+
+
+        <div class="card" id="">
+        <img src="{{p.imagen.url}}" class="card-img-top">
+        <div class='card-body'>
+        <h5 class='card-title'>{{p.nombre}}</h5>
+        <h6 class='card-subtitle'>{{p.especie}}-{{p.raza}}</h6>
+        <a href='#' class='btn text-white btnCard'>Me perdi!</a>
+        <a href="{%url 'mascotas:detalle' p.slug%}" class='btn text-white btnCard'>Información</a>
+        </div>
+        </div>
+
+{%endfor%}
+      </div>
+    </div>
+  </div>
+
+
+<a href="{%url 'mascotas:nuevo'%}"class="btn-floating btn-lg" data-toggle="tooltip" title="Añadir mascota" data-placement="left"><img id="btnAdd" src="{%static '/Img/white.png'%}" alt=""></a>
+
+{%endblock%}

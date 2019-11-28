@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {%load static%}
+    <link rel="stylesheet" href="{% static "/Css/style.css" %}">
+    <link ref="stylesheet" href="{% static "/Css/fontello.css" %}">
+
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>4Pets - Para las Mascotas</title>
+    <meta name="description" content="En ayuda a las nuestras mascotas querida">
+    <meta name="keywords" content="ayuda, mascotas, registro, adopcion, ONGs, perdidos, extraviados, perros">
+    <meta name="author" content="4Pets">
+    <link rel="stylesheet" href="{% static "/Css/boostrap/bootstrap.min.css"%}"></link>
+    <script src="{% static "/Js/jquery.js"%}"></script>
+    <script src="{% static "/Js/Registro.js"%}"></script>
+    <script src="{% static "/Js/boostrap/bootstrap.min.js"%}"></script>
+
+    <!-- Script -->
+    <script src="{% static "/Js/jquery.js"%}"></script>
+
+    <script src="{% static "/Js/boostrap/bootstrap.min.js"%}"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
+
+
+    <!-- FUENTES -->
+    <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <!-- Vendor CSS-->
+    <link href="{% static "/vendor/select2/select2.min.css"%}" rel="stylesheet" media="all">
+    <link href="{% static "/vendor/datepicker/daterangepicker.css"%}" rel="stylesheet" media="all">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+
+    <!-- Main CSS-->
+    {%block css%}
+    {%endblock%}
+</head>
+
+<body>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark header" id="navbar">
+        <img src="{% static "/Img/Logo4PetsB.png"%}" width="45" height="60" class="rounded" alt="Cinque Terre">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="{%url 'home'%}">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{%url 'mascotas:mismascotas'%}">Mascotas</a>
+            </li>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Eventos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Preguntas Frecuentes</a>
+            </li>
+          </ul>
+          {%if user.is_authenticated%}
+          <a text-align="left" class="nav-link"  href="{%url 'logout'%}">Buenas, {{user}}</a>
+          {%else%}
+          <a text-align="left" class="nav-link"  href="{%url 'login'%}">Inicio Sesion</a>
+          <form method="GET" action="{%url 'users:nuevouser'%}">
+          <button type="submit" class="btn btn-primary">Registrame</button>
+          </form>
+          {%endif%}
+        </div>
+    </nav>
+    
+    {%block content%}
+    
+    {%endblock%}
+        <!-- FOOTER -->
+          <footer class="footer-bs rounded mb-0 footer" id="footer">
+              <div class="row">
+                <div class="col-md-3 footer-brand animated fadeInLeft">
+                    <div class="media">
+                      <img src="{% static "/Img/Logo4PetsB.png"%}" width="80" height="100" class="rounded" alt="Cinque Terre">
+                      <div class="media-body"><h2>4Pets</h2></div>
+                    </div>
+                    <div class="row">
+                        <p>©Copyright © 2019 Todos los derechos reservados</p>
+                    </div>
+                  </div>
+                <div class="col-md-1 footer-nav animated fadeInUp">
+                  <size=2><strong>Nuestras Redes</strong></size>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Google+</a></li>
+                      </ul>
+                  </div>
+                <div class="col-md-2 footer-social animated fadeInDown"><size=2><strong>Contacto:</strong> <br> </size> <SIZE=3>+54362-4547608 </SIZE></div>
+                <div class="col-md-2 footer-social animated fadeInDown"><size=2><strong>E-mail:</strong> <br> </size> </size>Burich-1995@gmail.com</size></div>
+                <div class="col-md-2 footer-social animated fadeInDown"><size=2><strong>Ubicación</strong> <br> </size> </size>Resistencia, Chaco</size></div>
+
+                <div class="col-md-2 footer-ns animated fadeInRight">
+                  <size=2><strong>Páginas</strong></size>
+                    <ul>
+                      <li><a href="#">Registrarme</a></li>
+                      <li><a href="#">Sobre Nosotros</a></li>
+                      <li><a href="#">Extraviados</a></li>
+                      <li><a href="#">Eventos</a></li>
+                    </ul>
+                  </div>
+              </div>
+          </footer>
+
+          <!-- CIERRE -->
+          <section style="text-align:center;"><span>Diseñado por <a href="#">UpPiGo</a></span></section>
+      </div>
+
+
+</body>
+</html>

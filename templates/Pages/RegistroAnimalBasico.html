@@ -1,0 +1,99 @@
+{%extends 'base.html'%}
+      {%load static%}
+{%block css%}
+    <link href="{%static 'Css/RegistroAnimalBasico.css'%}" rel="stylesheet" media="all">
+    <link href="{%static 'Css/style.css%'}" rel="stylesheet">
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+{%endblock %}
+      {%block content%}
+
+    
+        <!-- CONTENIDO -->
+    <div class="page-wrapper bg-red p-t-180 font-robo" id="content">
+        <div class="wrapper wrapper--w960">
+            <div class="card card-2">
+                <div class="card-heading"></div>
+                <div class="row"><div class="card-body">
+                    <div class="row">
+                      </div>
+                      <div class="centrar">
+                      <div class="media" >
+                        <img class="centrarimg" src="{%static '/Img/huellastitulo.png'%}" width="37" height="42" class="rounded" alt="Cinque Terre">
+                      <div class="media-body centrar">
+                        <h1 id="h1">¡Registra tu mascota!</h1>
+                      </div>
+                      </div>
+                    </div>
+                      <form method="POST" onsubmit=" return validar();" enctype='multipart/form-data'>{%csrf_token%}
+                          <div class="row" id="cont">
+                              <div class="col-sm-6">
+                                  <label for="validationTooltip01" class="col-form-label">*Nombre Completo </label>
+                                  <input type="text" name= "nombre" id="id_nombre" class="form-control" placeholder="Nombre de la mascota" maxlength="30" pattern="[A-Za-z]+" title="Solo letras. Tamaño maximo: 20" required>
+                                  <label for="validationTooltip01" class="col-form-label" >Responde al nombre </label>
+                                  <input type="text" name= "nomb_opcional"id="id_nomb_opcional"class="form-control" placeholder="Responde a …" maxlength="20" pattern="[A-Za-z]+">
+
+                                <label for="validationTooltip01" class="col-form-label">*Especie:</label>
+                                <select name= "especie"id="id_especie"class="browser-default custom-select" required >
+                                  <option selected value="">Seleccione una opción</option>
+                                  <option value="Perro">Perro</option>
+                                  <option value="Gato">Gato</option>
+                                  <option value="Otros">Otros</option>
+                                </select>
+                            <label for="validationTooltip01" class="col-form-label">*Sexo:</label>
+                                <select name="sexo" id="id_sexo"class="browser-default custom-select" required >
+                                  <option selected value="">Seleccione una sexo</option>
+                                  <option value="Otro">Dezconozco</option>
+                                  <option value="Macho">Macho</option>
+                                  <option value="Hembra">Hembra</option>
+                                </select>
+                          
+                              </div>
+                              <div class="col-sm-6" >
+                                  <div class="ingresofecha" id="fecha">
+                                      <label for="validationTooltip01" class="col-form-label" id="labelFecha">Fecha de nacimiento:</label>
+                                      <input id="datepicker" width="250" name= "fec_nac"id="id_fec_nac"/>
+                          
+                                      <script>
+                                          $('#datepicker').datepicker({
+                                              showOtherMonths: true
+                                          });
+                                      </script>
+                          
+
+                                    </div>
+
+
+                                <div id="col2">
+                                  <label for="em2" class="col-form-label">Cargar Foto:</label>
+                                  <div class="custom-file" for="id_imagen">
+                                      <input type="file" class="custom-file-input" name= "imagen"id="id_imagen" accept="image/*">
+                                      <label class="custom-file-label" for="customFileLang">Ejemplo.jpg</label>
+                                    </div>
+                                  </div>
+                                  <div id="col2">
+                                    <label for="validationTooltip01" class="col-form-label">Raza:</label>
+                                    <input type="text" class="tipodeletra form-control " placeholder="Raza de tu mascota" name= "raza"id="id_raza" required>
+                                  </div>
+                              </div>
+
+                              <div class="row col align-items-end botonera">
+                                  <div>
+                                    <button type="button" class="btn botones col " id="btnsalir">Salir</button>
+                                  </div>
+                                  <div>
+                                    <button type="submit" class="btn botones col "id="btnsig" href="#">más información</button>
+                                  </div>
+
+                                </div>
+                          </div>
+
+                      </form>
+
+                  </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    {%endblock%}

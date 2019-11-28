@@ -1,0 +1,1072 @@
+.mediaViewInfo {
+    --web-view-name: Pagina Registro Persona;
+    --web-view-id: Pagina_Registro_Persona;
+    --web-scale-on-resize: true;
+    --web-add-image-compare: true;
+    --web-enable-deep-linking: true;
+}
+:root {
+    --web-view-ids: Pagina_Registro_Persona;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.Pagina_Registro_Persona_Class {
+    position: absolute;
+    box-sizing: border-box;
+    background: #E5E5E5;
+    width: 1920px;
+    height: 1080px;
+    background-color: rgba(109,206,196,1);
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    --web-view-name: Pagina Registro Persona;
+    --web-view-id: Pagina_Registro_Persona;
+    --web-scale-on-resize: true;
+    --web-add-image-compare: true;
+    --web-enable-deep-linking: true;
+}
+.Fondo_Class {
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.161));
+}
+.Fondo {
+    position: absolute;
+    overflow: visible;
+    width: 1688px;
+    height: 897px;
+    left: 125px;
+    top: 101px;
+}
+.ImagenPets_Class {
+    filter: blur(0px);
+}
+.ImagenPets {
+    overflow: visible;
+    position: absolute;
+    top: 100px;
+    left: 125px;
+    width: 396.998px;
+    height: 878.793px;
+    transform: matrix(1,0,0,1,0,0);
+}
+.Frasedefoto_Class {
+    position: absolute;
+    left: 125px;
+    top: 311px;
+    overflow: visible;
+    width: 391px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(0,0,0,1);
+}
+.Password_Class {
+    position: absolute;
+    width: 603px;
+    height: 76px;
+    left: 527.808px;
+    top: 753px;
+    overflow: visible;
+}
+.Rectangle {
+    position: absolute;
+    overflow: visible;
+    width: 603px;
+    height: 44px;
+    left: 0px;
+    top: 32px;
+}
+.Password_A0_Text_3_Class {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+    width: 87px;
+    white-space: nowrap;
+    line-height: 18px;
+    margin-top: -1.5px;
+    text-align: left;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgba(0,0,0,1);
+}
+.Oval {
+    position: absolute;
+    overflow: visible;
+    width: 6px;
+    height: 6px;
+    left: 18px;
+    top: 50px;
+}
+.Oval_Copy {
+    position: absolute;
+    overflow: visible;
+    width: 6px;
+    height: 6px;
+    left: 28px;
+    top: 50px;
+}
+.Oval_Copy_2 {
+    position: absolute;
+    overflow: visible;
+    width: 6px;
+    height: 6px;
+    left: 38px;
+    top: 50px;
+}
+.Oval_Copy_3 {
+    position: absolute;
+    overflow: visible;
+    width: 6px;
+    height: 6px;
+    left: 48px;
+    top: 50px;
+}
+.Oval_Copy_4 {
+    position: absolute;
+    overflow: visible;
+    width: 6px;
+    height: 6px;
+    left: 58px;
+    top: 50px;
+}
+.Oval_Copy_5 {
+    position: absolute;
+    overflow: visible;
+    width: 6px;
+    height: 6px;
+    left: 68px;
+    top: 50px;
+}
+.Oval_Copy_6 {
+    position: absolute;
+    overflow: visible;
+    width: 6px;
+    height: 6px;
+    left: 78px;
+    top: 50px;
+}
+.Oval_Copy_7 {
+    position: absolute;
+    overflow: visible;
+    width: 6px;
+    height: 6px;
+    left: 88px;
+    top: 50px;
+}
+.Oval_Copy_8 {
+    position: absolute;
+    overflow: visible;
+    width: 6px;
+    height: 6px;
+    left: 98px;
+    top: 50px;
+}
+.Oval_Copy_9 {
+    position: absolute;
+    overflow: visible;
+    width: 6px;
+    height: 6px;
+    left: 108px;
+    top: 50px;
+}
+.Oval_Copy_10 {
+    position: absolute;
+    overflow: visible;
+    width: 6px;
+    height: 6px;
+    left: 118px;
+    top: 50px;
+}
+.Password_A0_Text_3_Class {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+    width: 87px;
+    white-space: nowrap;
+    line-height: 18px;
+    margin-top: -1.5px;
+    text-align: left;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgba(0,0,0,1);
+}
+.Repeat_Password_Class {
+    position: absolute;
+    width: 603px;
+    height: 76px;
+    left: 1164.262px;
+    top: 753px;
+    overflow: visible;
+}
+.Rectangle_A0_Rectangle_3 {
+    position: absolute;
+    overflow: visible;
+    width: 603px;
+    height: 44px;
+    left: 0px;
+    top: 32px;
+}
+.Repeat_Password_A0_Text_4_Class {
+    position: absolute;
+    left: 1px;
+    top: 0px;
+    overflow: visible;
+    width: 142px;
+    white-space: nowrap;
+    line-height: 18px;
+    margin-top: -1.5px;
+    text-align: left;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgba(0,0,0,1);
+}
+.Ovals_Class {
+    position: absolute;
+    width: 116px;
+    height: 6px;
+    left: 18px;
+    top: 50px;
+    overflow: visible;
+}
+.Oval_A0_Ellipse_12 {
+    position: absolute;
+    overflow: visible;
+    width: 6px;
+    height: 6px;
+    left: 0px;
+    top: 0px;
+}
+.Oval_Copy_A0_Ellipse_13 {
+    position: absolute;
+    overflow: visible;
+    width: 6px;
+    height: 6px;
+    left: 10px;
+    top: 0px;
+}
+.Oval_Copy_2_A0_Ellipse_14 {
+    position: absolute;
+    overflow: visible;
+    width: 6px;
+    height: 6px;
+    left: 20px;
+    top: 0px;
+}
+.Oval_Copy_3_A0_Ellipse_15 {
+    position: absolute;
+    overflow: visible;
+    width: 6px;
+    height: 6px;
+    left: 30px;
+    top: 0px;
+}
+.Oval_Copy_4_A0_Ellipse_16 {
+    position: absolute;
+    overflow: visible;
+    width: 6px;
+    height: 6px;
+    left: 40px;
+    top: 0px;
+}
+.Oval_Copy_5_A0_Ellipse_17 {
+    position: absolute;
+    overflow: visible;
+    width: 6px;
+    height: 6px;
+    left: 50px;
+    top: 0px;
+}
+.Oval_Copy_6_A0_Ellipse_18 {
+    position: absolute;
+    overflow: visible;
+    width: 6px;
+    height: 6px;
+    left: 60px;
+    top: 0px;
+}
+.Oval_Copy_7_A0_Ellipse_19 {
+    position: absolute;
+    overflow: visible;
+    width: 6px;
+    height: 6px;
+    left: 70px;
+    top: 0px;
+}
+.Oval_Copy_8_A0_Ellipse_20 {
+    position: absolute;
+    overflow: visible;
+    width: 6px;
+    height: 6px;
+    left: 80px;
+    top: 0px;
+}
+.Oval_Copy_9_A0_Ellipse_21 {
+    position: absolute;
+    overflow: visible;
+    width: 6px;
+    height: 6px;
+    left: 90px;
+    top: 0px;
+}
+.Oval_Copy_10_A0_Ellipse_22 {
+    position: absolute;
+    overflow: visible;
+    width: 6px;
+    height: 6px;
+    left: 100px;
+    top: 0px;
+}
+.Oval_Copy_11 {
+    position: absolute;
+    overflow: visible;
+    width: 6px;
+    height: 6px;
+    left: 110px;
+    top: 0px;
+}
+.Country_Class {
+    position: absolute;
+    left: 1078.262px;
+    top: 555px;
+    overflow: visible;
+    width: 70px;
+    white-space: nowrap;
+    line-height: 18px;
+    margin-top: -1.5px;
+    text-align: left;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgba(0,0,0,1);
+}
+.Nombre__Class {
+    position: absolute;
+    width: 603px;
+    height: 76px;
+    left: 527.808px;
+    top: 292px;
+    overflow: visible;
+}
+.Grupo_7_Class {
+    position: absolute;
+    width: 603px;
+    height: 44px;
+    left: 0px;
+    top: 32px;
+    overflow: visible;
+}
+.Rectangle_A0_Rectangle_4 {
+    position: absolute;
+    overflow: visible;
+    width: 603px;
+    height: 44px;
+    left: 0px;
+    top: 0px;
+}
+.Filters_Class {
+    position: absolute;
+    left: 19px;
+    top: 12px;
+    overflow: visible;
+    width: 80px;
+    white-space: nowrap;
+    line-height: 17px;
+    margin-top: -1px;
+    text-align: left;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(71,123,161,1);
+}
+.Team_name_Class {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+    width: 66px;
+    white-space: nowrap;
+    line-height: 18px;
+    margin-top: -1.5px;
+    text-align: left;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgba(0,0,0,1);
+}
+.Titulo_Class {
+    position: absolute;
+    width: 540px;
+    height: 49px;
+    left: 527.808px;
+    top: 193.822px;
+    overflow: visible;
+}
+.Titulo_A0_Text_8_Class {
+    position: absolute;
+    left: 57px;
+    top: 0px;
+    overflow: visible;
+    width: 484px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 37px;
+    color: rgba(0,0,0,1);
+}
+.logo_Class {
+    position: absolute;
+    width: 38.431px;
+    height: 34.874px;
+    left: 0px;
+    top: 8.667px;
+    overflow: visible;
+}
+.Path {
+    overflow: visible;
+    position: absolute;
+    top: 0px;
+    left: 11.924px;
+    width: 17.783px;
+    height: 20.7px;
+    transform: matrix(1,0,0,1,0,0);
+}
+.Path_A0_Path_4 {
+    overflow: visible;
+    position: absolute;
+    top: 21.749px;
+    left: 0px;
+    width: 41.631px;
+    height: 16.969px;
+    transform: matrix(1,0,0,1,0,0);
+}
+.Breadcrumbs_Class {
+    position: absolute;
+    width: 157.597px;
+    height: 19px;
+    left: 125px;
+    top: 81px;
+    overflow: visible;
+}
+.Path_A0_Path_5 {
+    overflow: visible;
+    position: absolute;
+    top: 2.793px;
+    left: 43.033px;
+    width: 8.414px;
+    height: 14.828px;
+    transform: rotate(-90deg);
+}
+.Home_Class {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+    width: 32px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    color: rgba(92,121,154,1);
+}
+.Path_A0_Path_6 {
+    overflow: visible;
+    position: absolute;
+    top: 4.172px;
+    left: 149.183px;
+    width: 8.414px;
+    height: 14.828px;
+    transform: rotate(-90deg);
+}
+.New_Team_Class {
+    position: absolute;
+    left: 62px;
+    top: 0px;
+    overflow: visible;
+    width: 75px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    color: rgba(0,0,0,1);
+}
+.Hombre_Class {
+    position: absolute;
+    left: 586px;
+    top: 648px;
+    overflow: visible;
+    width: 58px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(255,255,255,1);
+}
+.select_dropbox_Class {
+    position: absolute;
+    width: 298px;
+    height: 140px;
+    left: 580px;
+    top: 547px;
+    overflow: visible;
+}
+.Rect_ngulo_9_Class {
+    filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.082));
+}
+.Rect_ngulo_9 {
+    position: absolute;
+    overflow: visible;
+    width: 307px;
+    height: 149px;
+    left: 0px;
+    top: 0px;
+}
+.Rect_ngulo_10 {
+    position: absolute;
+    overflow: visible;
+    width: 298px;
+    height: 35px;
+    left: 0px;
+    top: 0px;
+}
+.Seleccione_un_sexo_Class {
+    position: absolute;
+    left: 10px;
+    top: 11px;
+    overflow: visible;
+    width: 140px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(255,255,255,1);
+}
+.Mujer_Class {
+    position: absolute;
+    left: 13px;
+    top: 39px;
+    overflow: visible;
+    width: 41px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(116,116,116,1);
+}
+.Hombre_A0_Text_14_Class {
+    position: absolute;
+    left: 13px;
+    top: 76px;
+    overflow: visible;
+    width: 58px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(116,116,116,1);
+}
+.Otro_Class {
+    position: absolute;
+    left: 13px;
+    top: 113px;
+    overflow: visible;
+    width: 32px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(116,116,116,1);
+}
+.Provincias_Class {
+    position: absolute;
+    width: 599px;
+    height: 189px;
+    left: 1154px;
+    top: 547px;
+    overflow: visible;
+}
+.Rect_ngulo_9_A0_Rectangle_7_Class {
+    filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.082));
+}
+.Rect_ngulo_9_A0_Rectangle_7 {
+    position: absolute;
+    overflow: visible;
+    width: 608px;
+    height: 198px;
+    left: 0px;
+    top: 0px;
+}
+.Rect_ngulo_10_A0_Rectangle_8 {
+    position: absolute;
+    overflow: visible;
+    width: 599px;
+    height: 39px;
+    left: 0px;
+    top: 0px;
+}
+.Seleccione_una_provincia_Class {
+    position: absolute;
+    left: 10px;
+    top: 11px;
+    overflow: visible;
+    width: 179px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(255,255,255,1);
+}
+.Chaco_Class {
+    position: absolute;
+    left: 15px;
+    top: 45px;
+    overflow: visible;
+    width: 47px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(116,116,116,1);
+}
+.Santa_Fe_Class {
+    position: absolute;
+    left: 15px;
+    top: 102px;
+    overflow: visible;
+    width: 66px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(116,116,116,1);
+}
+.Formosa_Class {
+    position: absolute;
+    left: 15px;
+    top: 159px;
+    overflow: visible;
+    width: 64px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(116,116,116,1);
+}
+.Santiago_del_Estero_Class {
+    position: absolute;
+    left: 15px;
+    top: 131px;
+    overflow: visible;
+    width: 141px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(116,116,116,1);
+}
+.Corrientes_Class {
+    position: absolute;
+    left: 15px;
+    top: 73px;
+    overflow: visible;
+    width: 75px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(116,116,116,1);
+}
+.Path_A0_Path_7 {
+    overflow: visible;
+    position: absolute;
+    top: 561.213px;
+    left: 1722.156px;
+    width: 17.857px;
+    height: 9.74px;
+    transform: matrix(1,0,0,1,0,0);
+}
+.Path_A0_Path_8 {
+    overflow: visible;
+    position: absolute;
+    top: 561.213px;
+    left: 851.013px;
+    width: 17.857px;
+    height: 9.74px;
+    transform: matrix(1,0,0,1,0,0);
+}
+.BotonRegistar_Class {
+    position: absolute;
+    width: 280px;
+    height: 36px;
+    left: 1483px;
+    top: 902px;
+    overflow: visible;
+}
+.Button {
+    position: absolute;
+    overflow: visible;
+    width: 280px;
+    height: 36px;
+    left: 0px;
+    top: 0px;
+}
+.Sign_up_Class {
+    position: absolute;
+    left: 101px;
+    top: 10px;
+    overflow: visible;
+    width: 79px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: rgba(255,255,255,1);
+    letter-spacing: 0.11px;
+}
+.Password_A0_Text_23_Class {
+    position: absolute;
+    left: 529.808px;
+    top: 555px;
+    overflow: visible;
+    width: 39px;
+    white-space: nowrap;
+    line-height: 18px;
+    margin-top: -1.5px;
+    text-align: left;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgba(0,0,0,1);
+}
+.Apellido_Class {
+    position: absolute;
+    width: 603px;
+    height: 76px;
+    left: 527.808px;
+    top: 422px;
+    overflow: visible;
+}
+.Company_Name_Class {
+    position: absolute;
+    left: 1px;
+    top: 0px;
+    overflow: visible;
+    width: 66px;
+    white-space: nowrap;
+    line-height: 18px;
+    margin-top: -1.5px;
+    text-align: left;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgba(0,0,0,1);
+}
+.Grupo_4_Class {
+    position: absolute;
+    width: 603px;
+    height: 44px;
+    left: 0px;
+    top: 32px;
+    overflow: visible;
+}
+.Rectangle_A0_Rectangle_10 {
+    position: absolute;
+    overflow: visible;
+    width: 603px;
+    height: 44px;
+    left: 0px;
+    top: 0px;
+}
+.Filters_A0_Text_25_Class {
+    position: absolute;
+    left: 19px;
+    top: 12px;
+    overflow: visible;
+    width: 58px;
+    white-space: nowrap;
+    line-height: 17px;
+    margin-top: -1px;
+    text-align: left;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(71,123,161,1);
+}
+.Correo2_Class {
+    position: absolute;
+    width: 603px;
+    height: 76px;
+    left: 1164.262px;
+    top: 422px;
+    overflow: visible;
+}
+.Primary_Email_Class {
+    position: absolute;
+    width: 603px;
+    height: 76px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+.Rectangle_A0_Rectangle_11 {
+    position: absolute;
+    overflow: visible;
+    width: 603px;
+    height: 44px;
+    left: 0px;
+    top: 32px;
+}
+.Primary_Email_A0_Text_26_Class {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+    width: 207px;
+    white-space: nowrap;
+    line-height: 18px;
+    margin-top: -1.5px;
+    text-align: left;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgba(0,0,0,1);
+}
+.Filters_A0_Text_27_Class {
+    position: absolute;
+    left: 26.546px;
+    top: 41px;
+    overflow: visible;
+    width: 213px;
+    white-space: nowrap;
+    line-height: 17px;
+    margin-top: -1px;
+    text-align: left;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(71,123,161,1);
+}
+.Correo_Class {
+    position: absolute;
+    width: 603px;
+    height: 76px;
+    left: 1164.262px;
+    top: 292px;
+    overflow: visible;
+}
+.Primary_Email_A0_Group_17_Class {
+    position: absolute;
+    width: 603px;
+    height: 76px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+.Rectangle_A0_Rectangle_12 {
+    position: absolute;
+    overflow: visible;
+    width: 603px;
+    height: 44px;
+    left: 0px;
+    top: 32px;
+}
+.Primary_Email_A0_Text_28_Class {
+    position: absolute;
+    left: 1px;
+    top: 0px;
+    overflow: visible;
+    width: 138px;
+    white-space: nowrap;
+    line-height: 18px;
+    margin-top: -1.5px;
+    text-align: left;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgba(0,0,0,1);
+}
+.Filters_A0_Text_29_Class {
+    position: absolute;
+    left: 26.546px;
+    top: 44px;
+    overflow: visible;
+    width: 213px;
+    white-space: nowrap;
+    line-height: 17px;
+    margin-top: -1px;
+    text-align: left;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(71,123,161,1);
+}
+.tagline_Class {
+    position: absolute;
+    left: 377px;
+    top: 378px;
+    overflow: visible;
+    width: 139px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(0,0,0,1);
+}
+.ID4PetsLogo {
+    position: absolute;
+    overflow: visible;
+    width: 323px;
+    height: 159px;
+    left: 137px;
+    top: 124px;
+}
+.scroll_Class {
+    position: absolute;
+    width: 16px;
+    height: 134px;
+    left: 1734px;
+    top: 592px;
+    overflow: visible;
+}
+.Track_Class {
+    position: absolute;
+    width: 16px;
+    height: 134px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+.Track_A0_Rectangle_15 {
+    position: absolute;
+    overflow: visible;
+    width: 16px;
+    height: 134px;
+    left: 0px;
+    top: 0px;
+}
+.Left_highlight_B {
+    position: absolute;
+    overflow: visible;
+    width: 1px;
+    height: 134px;
+    left: 0px;
+    top: 0px;
+}
+.Left_highlight_A {
+    position: absolute;
+    overflow: visible;
+    width: 0.5px;
+    height: 134px;
+    left: 0px;
+    top: 0px;
+}
+.Right_highlight_B {
+    position: absolute;
+    overflow: visible;
+    width: 1px;
+    height: 134px;
+    left: 15px;
+    top: 0px;
+}
+.Right_highlight_A {
+    position: absolute;
+    overflow: visible;
+    width: 0.5px;
+    height: 134px;
+    left: 15.5px;
+    top: 0px;
+}
+.Bar_Class {
+    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.6));
+}
+.Bar {
+    overflow: visible;
+    position: absolute;
+    top: 0px;
+    left: 4px;
+    width: 17px;
+    height: 62.6px;
+    transform: matrix(1,0,0,1,0,0);
+}
+.Pagina_Registro_Persona_snapshot_Class {
+    animation: fadein 5s linear 0s infinite;
+    pointer-events: none;
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    left: 0;
+    top: 0;
+}
+@keyframes fadein {
+
+    0% {
+        opacity: 1;
+    }
+    37.5% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    87.5% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+
+}

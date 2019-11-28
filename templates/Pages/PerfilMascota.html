@@ -1,0 +1,132 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block css%}
+
+<link href="{%static '/Css/BotonesSociales.css'%}" rel="stylesheet">
+<link href="{%static '/Css/PerfilMascota.css'%}" rel="stylesheet" >
+{%endblock%}
+{%block content%}
+<!-- CONTENIDO -->
+<div class="page-wrapper bg-red p-t-180 p-b-100 font-robo">
+	<div class="wrapper wrapper--w960">
+		<div class="card card-2">
+			<div class="card-heading" id="card-heading"></div>
+			<div class="row"><div class="card-body">
+				<div class="col-sm-12">
+					<div class="row">
+
+					</div>
+					<div class="centrar">
+						<div class="media" >
+
+							<div class="media-body centrar">
+								<h1 id="titulo">Mi Mascota</h1>
+							</div>
+						</div>
+					</div>
+					<div id="row">
+						<div class="col-2 derecha">
+							<div class="row" >
+								<img src="{{object.imagen.url}}" class="rounded-circle" alt="Cinque Terre" id="imgperfilanimal">
+							</div>
+							<h2 id="nombre">{{object.nombre}}</h4>
+								<h3 id="razaEspecie">{{object.raza}}-{{object.especie}}</h4>
+								</div>
+
+								<h3 class="padding140" id="nombre"> Información Mascota</h3>
+								<p id="p">{{object.info_medica}}</p>
+								<div class="row">
+									<div class="col-sm-2">
+										<img src="{% static "/Img/macho.png"%}" alt="" id="imgSexo">
+										<p id="textoSexo">{{object.sexo}}</p>
+									</div>
+									<div class="col-sm-3">
+										<p id="edadtexto">Fecha de nacimiento:</p>
+										<h4 id="edad">{{object.fec_nac}}</h4>
+									</div>
+									<div class="col-sm-4" id="vet">
+										<h4>Veterinario:</h4>
+										<p>{{object.nom_doc}}</p>
+										<p>{{object.nom_vet}}</p>
+										<p>{{object.dir_vet}}</p>
+									</div>
+									<div class="col-sm-3"id="idtitulo">
+										<h5 >El numero ID de su mascota es:</h5>
+										<strong>{{object.pk}}</strong>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<!-- COLUMNA DOS DUEÑO-->
+
+						<div id="row">
+							<div class="col-sm-2 derecha">
+								<div class="row" >
+									<img src="{{user.image.url}}" class="rounded-circle" alt="Cinque Terre" id="imgperfildueño">
+								</div>
+								<h2  id="nombre">{{user.name}}</h4>
+									<h3 id="razaEspecie">{{user.residence}}</h4>
+									</div>
+
+									<h3 class="padding140" id="nombre"> Información Dueño</h3>
+									<p id="p"> placeholder</p>
+									<div class="row container" id="Triplecolumna">
+
+										<div class="col-sm">
+											<h4 class="top-bottom">Ubicacion</h4><!-- 
+											<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2977.2166732585933!2d-58.98683802284158!3d-27.452840287592643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1572913942385!5m2!1ses-419!2sar" width="250" height="170" frameborder="0" id="ubicacion" allowfullscreen=""></iframe> -->
+										</div>
+										<div class="col-sm">
+											<div class="animated fadeInUp">
+												<h4 class="top-bottom">Redes Sociales:</h4>
+
+												<div class="col">
+													<a aria-label="facebook" href="#" class="btn btn-social btn-facebook btn-round btn-icon-only"><i class="fa fa-fw fa-facebook"></i></a>
+													<a aria-label="twitter" href="#" class="btn btn-social btn-twitter btn-round btn-icon-only"><i class="fa fa-fw fa-twitter"></i> </a>
+													<a aria-label="googleplus" href="#" class="btn btn-social btn-googleplus btn-round btn-icon-only"><i class="fa fa-fw fa-google-plus"></i></a>
+													<a aria-label="instagram" href="#" class="btn btn-social btn-instagram btn-round btn-icon-only"><i class="fa fa-fw fa-instagram"></i></a>
+												</div>
+
+											</div>
+										</div>
+										<div class="col-sm">
+											<h4 class="top-bottom">Contacto:</h4> 
+
+											<div class="animated fadeInDown PaddingDatos"><size=2><strong>Nº Telefonico:</strong> <br> </size> <SIZE=3>placeholder</SIZE></div>
+											<hr>
+											<div class="animated fadeInDown PaddingDatos"><size=2><strong>E-mail:</strong> <br> </size> </size>{{user.email}}</size></div>
+											<hr>
+											<div class="animated fadeInDown PaddingDatos"><size=2><strong>Ubicación:</strong> <br> </size> </size>{{user.residence}}</size></div>
+
+										</div>
+
+									</div>
+
+									<div class="row">
+
+
+										<div class="col align-items-end botonera">
+											<div style="float: left;"><form method="GET" action="{%url 'mascotas:mismascotas'%}">
+												<button type="submit" class="btn botones col " id="btnsalir"  >Salir</button></form>
+											</div>
+											<div style="float: right;">
+												<button type="button" class="btn botones col " id="btneditar">Editar</button>
+											</div>
+
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+{%endblock%}

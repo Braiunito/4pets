@@ -1,0 +1,32 @@
+{%extends base.html%}
+{%load static%}
+{%block css%}
+	<link type="text/css" rel="stylesheet" href="{%static '/Css/404NotFound.css'%}" />
+
+	
+	<!-- FUENTES -->
+	<link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+
+{%endblock%}
+{%block content%}
+	<div id="notfound">
+		<div class="notfound-bg"></div>
+		<div class="notfound">
+			<div class="notfound-404">
+				<img alt="" src="{%static '/Img/404NotFound/no-encontrado.png'%}" id="imagen404"/><h1 id="cuatrocerocuatro">404</h1>
+			</div>
+			<h2>¡Oops! Lo sentimos, no pudimos encontrar lo que buscas</br>Busquemos un lugar mejor para usted</h2>
+			<form class="notfound-search">
+				<input type="text" placeholder="Buscar...">
+				<button type="button">Buscar</button>
+			</form>
+			<button class="btn btn-light btn-rounded botonera">Ejemplo 1</button>
+			<button class="btn btn-light btn-rounded botonera">Ejemplo 2</button>
+			<button class="btn btn-light btn-rounded botonera">Ejemplo 3</button>
+			<a href="#">Volver a la página principal</a>
+		</div>
+	</div>
+
+{%endblock%}

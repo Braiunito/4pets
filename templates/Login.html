@@ -1,0 +1,32 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="{%static '/Css/Login.css'%}">
+</head>
+<body>
+        <div class="content">
+            <form method="POST">{%csrf_token%}
+                <div class="title">Inicio de Sesión</div>
+                <input type="text" name="username" id="id_username "placeholder="Nombre de usuario"/>
+                <input type="password" name="password" id= "id_password"placeholder="Contraseña"/>
+                <input type="checkbox" id="rememberMe"/>
+                <label for="rememberMe"></label><span>Mantener Sesión</span>
+                <button type="submit" name="">Iniciar Sesión</button>
+                </form>
+                <div class="social"> <span>Iniciar sesión con</span></div>
+                <div class="buttons">
+                  <button class="facebook"><i class="fa fa-facebook"></i>Facebook</button>
+                  <button class="twitter"><i class="fa fa-twitter"></i>Twitter</button>
+                  <button class="google"><i class="fa fa-google-plus"></i>Google</button>
+                </div>
+                <div class="already">¿Aún no está registrado? <a href="{%url 'users:nuevouser'%}">Registrarme</a></div>
+              </div>
+    
+</body>
+</html>

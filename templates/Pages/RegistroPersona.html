@@ -1,0 +1,105 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block css%}
+
+    <!-- Main CSS-->
+    <link href="{%static '/Css/RegistroPersona.css'%}" rel="stylesheet" media="all">
+
+
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+{%endblock%}    
+    {%block content%}
+    <!-- BREADCRUMB -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb" style="margin:0px">
+        <li class="breadcrumb-item active" aria-current="page">Inicio</li>
+        <li class="breadcrumb-item active" aria-current="page">Registrarme</li>
+      </ol>
+    </nav>
+
+
+      <!-- CONTENIDO -->
+      <div class="page-wrapper bg-red p-t-100 p-b-100 font-robo">
+        <div class="wrapper wrapper--w960">
+            <div class="card card-2">
+                <div class="card-heading"></div>
+                <div class="row"><div class="card-body">
+                    <div class="row">
+                      </div>
+                      <div class="centrar">
+                      <div class="media" >
+                       
+                      <div class="media-body centrar">
+                        <h1 class="title">¡Registrarse gratis en 4Pets!</h1>
+                        <h3 class="title" id="subtitle">Solo necesitaremos lo básico</h3>
+                      </div>
+                      </div>
+                    </div>
+                      <form method="POST" id="form1" enctype='multipart/form-data'>{% csrf_token%}
+                          <div class="row" id="cont">
+                              <div class="col-sm-6">
+                                  <label for="validation01" class="margen2">*Nombre de usuario</label>
+                                  <input type="text" name="username" id="id_username" class="form-control cuadros" placeholder="Ingrese un nombre de usuario" required>
+                                  <label for="validationTooltip01" class="margen2">*Nombre:</label>
+                                  <input type="text" name="name" id="id_name" class="form-control cuadros cuadros letra" placeholder="Ingrese su Nombre Aquí" maxlength="30" pattern="[A-Za-z]+" required>
+                                  <label for="validation01" class="margen2">*Apellido:</label>
+                                  <input type="text" name="lastname" id="id_lastname" class="form-control cuadros" placeholder="Ingrese su Apellido Aquí" pattern="[A-Za-z]+" required>
+                                  <label class="margen3">*Cargar Foto:</label>
+                                      <div class="custom-file ">
+                                          <input type="file" class="custom-file-input" name="image" id="id_image" lang="es">
+                                          <label class="custom-file-label" for="customFileLang">Ejemplo.jpg</label>
+                                      </div>
+                                  
+                                </div>
+                                
+
+                              
+                              <div class="col-sm-6">
+                                <label class="margen2">Provincia:</label>
+                                <select name="residence" id="id_residence" class="browser-default custom-select" required>
+                                  <option value="" selected>Seleccione una provincia</option>
+                                  <option value="Chaco">Chaco</option>
+                                  <option value="Corrientes">Corrientes</option>
+                                  <option value="Formosa">Formosa</option>
+                                  <option value="Misiones">Misiones  </option>
+                                </select>
+                                <label class="margen2">Sexo:</label>
+                                <select name="gender" id="id_gender" class="browser-default custom-select" required>
+                                  <option value="" selected>Seleccione un sexo</option>
+                                  <option value="Femenino">Femenino</option>
+                                  <option value="Masculino">Masculino</option>
+                                  <option value="Otros">Otros</option>
+                                </select>
+                                    <div class="form-group">
+                                        <label for="pass1" class="margen2">*Contraseña:</label>
+                                        <input type="password" class="form-control cuadros" name="password1" id="id_password1" placeholder="Ingrese su contraseña" required>
+                                        <label for="pass2" class="margen2">*Confirmación de Contraseña:</label>
+                                        <input type="password" class="form-control cuadros" name="password2" id="id_password2" placeholder="Repita su contraseña" required>
+                                    </div>
+
+                              </div>
+                              <div class="col-sm-12">
+                                  <label for="em1" class="margen0">*E-mail:</label>
+                                  <input type="email" class="form-control cuadros cuadros letra"name="email" id="id_email" placeholder="Ingrese su E-mail Aquí" required> <span class="icon-down-open"></span>
+                              </div>
+
+                          </div>
+                          <div class="row col align-items-end botonera">
+                              <div>
+                                <button type="button" class="btn botones col " id="btnsalir" href="{% url }">Atras</button>
+                              </div>
+                              <div>
+                                <button type="submit" class="btn botones col "id="btnsig" href="#">Registrarme</button>
+                              </div>
+
+                            </div>
+                      </form>
+
+                  </div></div>
+
+            </div>
+        </div>
+    </div>
+
+{%endblock%}

@@ -1,0 +1,93 @@
+{%extends 'base.html'%}
+      {%load static%}
+{%block css%}
+
+<link href="{%static 'Css/RegistroAnimalDetallado.css'%}" rel="stylesheet" media="all">
+    <link href="{%static 'Css/style.css'%}" rel="stylesheet" media="all">
+
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <!-- FUENTES -->
+    <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+{%endblock%}
+
+      {%block content%}
+
+    
+
+<!-- CONTENIDO -->
+    <div class="page-wrapper bg-red p-t-100 p-b-100 font-robo">
+        <div class="wrapper wrapper--w960">
+            <div class="card card-2">
+                <div class="card-heading"></div>
+                <div class="row"><div class="card-body">
+                    <div class="row">
+                      </div>
+                      <div class="centrar">
+                      <div class="media" >
+
+                      <div class="media-body centrar">
+                        <h1 class="title">¡Registra tu mascota!</h1>
+                      </div>
+                      </div>
+                    </div>
+
+                    <h3 class="title" id="subtitle">¡Mucho gusto!</h3>
+                    <h3 class="title" id="subtitle">Cuéntanos todo sobre tu magnífica mascota.</h3><img src="{%static '/Img/huellastitulo.png'%}" class="rounded-circle" alt="Cinque Terre" id="imgperfil">
+                      <form method="POST">{%csrf_token%}
+                          <div class="row" id="cont">
+                              <div class="col-sm-6">
+
+                                  <label for="validationTooltip01" class="col-form-label">Nombre de Veterinario:</label>
+                                  <input type="text" name="nom_doc" id="id_nom_doc" maxlength="50"class="tipodeletra form-control" placeholder="Juan Cruz Sanchez" required>
+
+                                  <label for="validationTooltip01" class="col-form-label">Nombre de Veterinaria:</label>
+                                  <input type="text" name="nom_vet" id="id_nom_vet" maxlength="30" class="tipodeletra form-control" placeholder="Patitas" required>
+
+                              </div>
+                              <div class="col-sm-6">
+
+                                <label for="validationTooltip01" class="col-form-label">Nº Telefónico del veterinario:</label>
+                                <input type="text" name="tel_vet" id="id_tel_vet" class="tipodeletra form-control" placeholder="0362-4000000" maxlength="16" required>
+                                <label for="validationTooltip01" class="col-form-label">Código Postal:</label>
+                                <input type="text" name="cp_vet" id="id_cp_vet" maxlength="4"class="tipodeletra form-control" placeholder="3500" required>
+                              </div>
+                              <div class="col-sm-12">
+
+                                  <label for="validationTooltip01" class="col-form-label">Ciudad:</label>
+                                  <input type="text" name="ciudad_vet" id="id_ciudad_vet" maxlength="30"class="tipodeletra form-control" placeholder="Resistencia" required>
+
+                                  <label for="validationTooltip01" class="col-form-label">Dirección de la Veterinaria :</label>
+                                  <input type="text" name="dir_vet" id="id_dir_vet" maxlength="50" class="tipodeletra form-control" placeholder="Altura - Calle" required>
+
+                                  <label for="validationTooltip01" class="col-form-label">Mas detalles de la veterinaria:</label>
+                                  <input type="text" name="detalles_vet" id="id_detalles_vet" class="tipodeletra form-control" maxlength="200"placeholder="Mas información de importancia que quisiera dejar registrado." required>
+                                  <p class="margen2">*Información medica:</p>
+                                   <div class="">
+                                     <textarea id="textarea-char-counter" name="info_medica" id="id_info_medica" class="form-control md-textarea" maxlength="240" rows="4" required="" placeholder="Rellene este campo con información médica del animal que sea de relevancia. Ej: vacunas, desparasitación, castración, etc.  En caso de no poseer información médica escribir 'No posee'"></textarea>
+                                     <label for="textarea-char-counter"></label>
+                                   </div>
+                              </div>
+
+
+                          </div>
+                          <!-- BOTONES FINALES -->
+                          <div class="row col align-items-end botonera">
+                              <div>
+                                <button type="button" class="btn botones col " id="btnsalir">Atras</button>
+                              </div>
+                              <div>
+                                <button type="submit" class="btn botones col "id="btnsig">Vista Previa de información</button>
+                              </div>
+
+                            </div>
+                      </form>
+
+                  </div></div>
+
+            </div>
+        </div>
+    </div>
+    {%endblock%}

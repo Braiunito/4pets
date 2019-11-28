@@ -1,0 +1,146 @@
+#cont {
+  margin-top: 20px;
+}
+#h2 {
+  text-align: center;
+  color: #797d7f;
+  font-size: 20px;
+  font-family: "Asap", serif;
+}
+
+#h3 {
+  color: #797d7f;
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-family: "Asap", serif;
+}
+#imgperfil {
+  border-radius: 50%;
+  width: 110px;
+  height: 90px;
+  display: block;
+  margin: auto;
+}
+#razaEspecie {
+  margin-bottom: 10px;
+  text-align: center;
+  color: #797d7f;
+  font-size: 15px;
+  font-family: "Asap", sans-serif;
+}
+#nombre {
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 6px;
+  font-size: 20px;
+  font-family: "Asap", sans-serif;
+}
+#p {
+  text-align: center;
+  margin-top: 10px;
+  background-color: #f7eceb;
+  border-radius: 30px;
+  margin: 10px;
+  padding: 10px;
+}
+#imgSexo {
+  width: 50px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#textoSexo {
+  text-align: center;
+}
+#edad {
+  text-align: center;
+  margin-top: 25px;
+}
+#edadtexto {
+  text-align: center;
+  margin-top: 15px;
+  font-family: "Asap", sans-serif;
+}
+#vet {
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Asap", serif;
+}
+#titulo {
+  margin-left: 0px;
+  font-family: "Asap", sans-serif;
+  text-align: center;
+}
+
+#idtitulo {
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Asap", serif;
+  font-size: 30px;
+}
+.strong {
+  font-family: "Asap", serif;
+  text-align: center;
+}
+#row {
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding: 10px;
+}
+#btneditar {
+  background-color: transparent;
+  border-radius: 20px;
+  border: 1px solid #545871;
+  display: inline-block;
+  cursor: pointer;
+  color: #000000;
+  margin-left: auto;
+  padding-right: 5px;
+  padding-left: 5px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #222222;
+  width: 90px;
+  height: 42px;
+}
+
+
+#btnsalir {
+  background-color: transparent;
+  border-radius: 20px;
+  border: 1px solid #545871;
+  display: inline-block;
+  cursor: pointer;
+  color: #000000;
+  margin-left: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #222222;
+  width: 80px;
+  height: 42px;
+}
+
+#btnsig {
+  background-color: #545871;
+  border-radius: 20px;
+  border: 1px solid #545871;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  margin-right: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #222222;
+  width: 110px;
+  height: 42px;
+}
+
+.card-2 .card-heading {
+  background: url("../img/confirmacion.png") top center/cover no-repeat;
+  width: 39.1%;
+  display: table-cell;
+}

@@ -1,0 +1,164 @@
+/*  BOTONES SOCIALES CIRCULARES CHICO HTML
+
+<a aria-label="facebook" href="#" class="btn btn-social btn-facebook btn-round btn-icon-only"><i class="fa fa-fw fa-facebook"></i></a>
+<a aria-label="youtube" href="#" class="btn btn-social btn-youtube btn-round btn-icon-only"><i class="fa fa-fw fa-youtube"></i></a>
+<a aria-label="twitter" href="#" class="btn btn-social btn-twitter btn-round btn-icon-only"><i class="fa fa-fw fa-twitter"></i> </a>
+<a aria-label="whatsapp" href="#" class="btn btn-social btn-whatsapp btn-round btn-icon-only"><i class="fa fa-fw fa-whatsapp"></i></a>
+<a aria-label="googleplus" href="#" class="btn btn-social btn-googleplus btn-round btn-icon-only"><i class="fa fa-fw fa-google-plus"></i></a>
+<a aria-label="instagram" href="#" class="btn btn-social btn-instagram btn-round btn-icon-only"><i class="fa fa-fw fa-instagram"></i></a>
+<a aria-label="linkedIn" href="#" class="btn btn-social btn-linkedin btn-round btn-icon-only"><i class="fa fa-fw fa-linkedin"></i></a>
+<a aria-label="pinterest" href="#" class="btn btn-social btn-pinterest btn-round btn-icon-only"><i class="fa fa-fw fa-pinterest"></i></a>
+<a aria-label="snapchat" href="#" class="btn btn-social btn-snapchat btn-round btn-icon-only"><i class="fa fa-fw fa-snapchat"></i></a>
+<a aria-label="telegram" href="#" class="btn btn-social btn-telegram btn-round btn-icon-only"><i class="fa fa-fw fa-telegram"></i></a>
+
+LARGOS CON NOMBRE Y LOGO 
+
+  <a href="#" class="btn btn-social btn-facebook"><i class="fa fa-fw fa-facebook"></i> Facebook</a>
+</div>
+<div class="col col-xs-6 col-sm-4 col-md-3 p-2">
+  <a href="#" class="btn btn-social btn-youtube"><i class="fa fa-fw fa-youtube"></i> Youtube</a>
+</div>
+<div class="col col-xs-6 col-sm-4 col-md-3 p-2">
+  <a href="#" class="btn btn-social btn-twitter"><i class="fa fa-fw fa-twitter"></i> Twitter</a>
+</div>
+<div class="col col-xs-6 col-sm-4 col-md-3 p-2">
+  <a href="#" class="btn btn-social btn-whatsapp"><i class="fa fa-fw fa-whatsapp"></i> Whatsapp</a>
+</div>
+<div class="col col-xs-6 col-sm-4 col-md-3 p-2">
+  <a href="#" class="btn btn-social btn-googleplus"><i class="fa fa-fw fa-google-plus"></i> Google+</a>
+</div>
+<div class="col col-xs-6 col-sm-4 col-md-3 p-2">
+  <a href="#" class="btn btn-social btn-instagram"><i class="fa fa-fw fa-instagram"></i> Instagram</a>
+</div>
+<div class="col col-xs-6 col-sm-4 col-md-3 p-2">
+  <a href="#" class="btn btn-social btn-linkedin"><i class="fa fa-fw fa-linkedin"></i> LinkedIn</a>
+</div>
+<div class="col col-xs-6 col-sm-4 col-md-3 p-2">
+  <a href="#" class="btn btn-social btn-pinterest"><i class="fa fa-fw fa-pinterest"></i> Pinterest</a>
+</div>
+<div class="col col-xs-6 col-sm-4 col-md-3 p-2">
+  <a href="#" class="btn btn-social btn-snapchat"><i class="fa fa-fw fa-snapchat"></i> Snapchat</a>
+</div>
+<div class="col col-xs-6 col-sm-4 col-md-3 p-2">
+  <a href="#" class="btn btn-social btn-telegram"><i class="fa fa-fw fa-telegram"></i> Telegram</a>
+</div>
+
+*/
+
+
+@charset "UTF-8";
+/**
+ * Função tint
+ * "Mistura" a cor desejada com o branco em certa proporção (percentage).
+ **/
+.btn-social {
+  cursor: pointer;
+}
+
+.btn-social {
+  color: #fff;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 0.2em;
+  font-size: 16px;
+}
+
+.btn-social:hover {
+  color: #fff;
+  box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 13px 0 rgba(0, 0, 0, 0.15);
+}
+
+/***Background dos botões***/
+.btn-facebook {
+  background-color: #3b5998;
+}
+
+.btn-youtube {
+  background-color: #ed302f;
+}
+
+.btn-twitter {
+  background-color: #55acee;
+}
+
+.btn-whatsapp {
+  background-color: #4bc75a;
+}
+
+.btn-googleplus {
+  background-color: #dd4b39;
+}
+
+.btn-instagram {
+  background-color: #2e5e86;
+}
+
+.btn-linkedin {
+  background-color: #0082ca;
+}
+
+.btn-pinterest {
+  background-color: #c61118;
+}
+
+.btn-snapchat {
+  background-color: #e8d934;
+}
+
+.btn-telegram {
+  background: #279fd3;
+}
+
+.btn-facebook:hover {
+  background-color: #627aad;
+}
+
+.btn-youtube:hover {
+  background-color: #f15959;
+}
+
+.btn-twitter:hover {
+  background-color: #77bdf1;
+}
+
+.btn-whatsapp:hover {
+  background-color: #6fd27b;
+}
+
+.btn-googleplus:hover {
+  background-color: #e46f61;
+}
+
+.btn-instagram:hover {
+  background-color: #587e9e;
+}
+
+.btn-linkedin:hover {
+  background-color: #339bd5;
+}
+
+.btn-pinterest:hover {
+  background-color: #d14146;
+}
+
+.btn-snapchat:hover {
+  background-color: #ede15d;
+}
+
+.btn-telegram:hover {
+  background-color: #52b2dc;
+}
+
+/**
+ * Utilitários
+ */
+.btn-round {
+  border-radius: 50%;
+}
+
+.btn-icon-only {
+  height: 45px;
+  width: 45px;
+  padding: 8px;
+  text-align: center;
+  line-height: 1.6;
+}

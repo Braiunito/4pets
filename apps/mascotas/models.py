@@ -30,3 +30,11 @@ class Mascota(models.Model):
 
 	def __str__(self):
 		return self.nombre
+
+class Perdidos(models.Model):
+	mascota= models.ForeignKey(Mascota, on_delete=models.CASCADE)
+	a=models.CharField(max_length=50)
+	b=models.DateField()
+	c=models.CharField(max_length=50, null=True, blank=True)
+	d=models.CharField(max_length=50, null=True, blank=True)
+	e=models.BooleanField(default=True)

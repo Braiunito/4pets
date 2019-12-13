@@ -13,4 +13,6 @@ urlpatterns = [
 	path("mismascotas/", views.MisMascotas.as_view(), name="mismascotas"),
 
 	path("detalle/<slug:slug>", views.DetallesMascota.as_view(), name="detalle"),
+
+	path("perdida/<slug:slug>", views.MascotaPerdida.as_view(), name="perdida"),
 ]

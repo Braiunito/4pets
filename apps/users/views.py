@@ -15,5 +15,8 @@ class Registrarte(CreateView):
 	success_url = reverse_lazy('mascotas:nuevo')
 	def form_invalid(self, form):
 		response= HttpResponse("Error, usuario ya existente")
+		response= HttpResponse("O error al ingresar la contraseña")
+		response= HttpResponse("O cayó un meteorito y destruyó el server")
+		response= HttpResponse("No sé, hay un error")
 		response.write("<a href=''>Volver</a>")
 		return response

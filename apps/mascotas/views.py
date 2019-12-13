@@ -4,7 +4,7 @@ from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.contrib.auth.mixins import LoginRequiredMixin
-from .models import Mascota
+from .models import Mascota, Perdidos
 from django.utils.text import slugify
 from django.http import HttpResponse, HttpResponseRedirect, Http404
 
@@ -38,7 +38,42 @@ class RegistrarMascota(LoginRequiredMixin, CreateView):
 		response.write("<div>Tal vez esta mascota ya existe?</div>")
 		return response
 
-class RegistrarParte2(UpdateView):
+class MascotaPerdida(LoginRequiredMixin, CreateView):
+	model= Perdidos
+	fields=('mascota','a','b','c','d','e')
+	template_name='pages/testing.html'
+
+
+
+	def post(self, request, *args, **kwargs):
+		form = self.get_form()
+		request.POST._mutable=True
+		x=kwargs['slug']
+		r=Mascota.objects.filter(slug=x)
+		form.data['mascota']=r[0].id
+		form.data['e']=True
+		if form.is_valid():
+			return self.form_valid(form)
+		else:
+			print(form.cleaned_data['a'])
+
+			print(form.cleaned_data['c'])
+			print(form.cleaned_data['d'])
+			print(form.cleaned_data['e'])
+
+			return self.form_invalid(form)
+
+	def form_valid(self, form):
+		self.object = form.save()
+		return HttpResponseRedirect(reverse_lazy('mascotas:mismascotas'))
+	
+	def form_invalid(self,form):
+		response= HttpResponse("Algo salió mal, bastante mal diria yo")
+		response.write("<div>Intente de nuevo haciendo clic <a href=''>aquí</a></div>")
+		return response
+
+
+class RegistrarParte2(LoginRequiredMixin, UpdateView):
 	model = Mascota
 	template_name='pages/RegistroAnimalDetallado.html'
 	fields=('info_medica','nom_doc','nom_vet','dir_vet','tel_vet','cp_vet','ciudad_vet','detalles_vet')
@@ -46,7 +81,11 @@ class RegistrarParte2(UpdateView):
 		x=self.kwargs['slug']
 		context=Mascota.objects.filter(slug=x)
 		return context
-
+	def get_object(self, queryset=None):
+		obj = super(RegistrarParte2, self).get_object()
+		if not obj.usuario == self.request.user:
+			raise Http404
+		return obj
 	def form_valid(self, form):
 		self.object = form.save()
 		x=self.kwargs['slug']
@@ -78,6 +117,7 @@ class MisMascotas(LoginRequiredMixin,ListView):
 		user= request.user.pk
 		queryset=Mascota.objects.filter(usuario_id=user)
 		return queryset
+
 
 class DetallesMascota(LoginRequiredMixin, DetailView):
 	model = Mascota
